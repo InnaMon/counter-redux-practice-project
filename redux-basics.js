@@ -24,12 +24,16 @@ const rootReducer = (state = initialState, action) => {
 
 //Store
 const store = createStore(rootReducer);
-console.log(store.getState());
+console.log('[Store]', store.getState());
+
+//Subscription
+store.subscribe(() => {
+    console.log('[Subscription]', store.getState());
+});
 
 //Dispatching Action
 
 store.dispatch({type: 'INC_COUNTER'}); //incremenets by one
 store.dispatch({type: 'ADD_COUNTER', value: 10}); //adds specific number to counter, value needs to be passed down along with type
-console.log(store.getState());
+console.log('[Dispatching Action]', store.getState());
 
-//Subscription

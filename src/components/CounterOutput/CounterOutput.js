@@ -8,4 +8,4 @@ const counterOutput = (props) => (
     </div>
 );
 
-export default counterOutput;
+export default counterOutput; 

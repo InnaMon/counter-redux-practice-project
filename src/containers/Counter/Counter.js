@@ -34,7 +34,7 @@ class Counter extends Component {
                 <CounterControl label="Add 5" clicked={() => this.counterChangedHandler( 'add', 5 )}  />
                 <CounterControl label="Subtract 5" clicked={() => this.counterChangedHandler( 'sub', 5 )}  />
             </div>
-        );
+        ); 
     }
 }
 

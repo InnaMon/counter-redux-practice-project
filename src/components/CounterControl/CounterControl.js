@@ -8,4 +8,4 @@ const counterControl = (props) => (
     </div>
 );
 
-export default counterControl;
+export default counterControl; 

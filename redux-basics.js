@@ -10,7 +10,7 @@ const rootReducer = (state = initialState, action) => {
     if (action.type === 'INC_COUNTER') {
         return {
             ...state,
-            counter: state.counter++
+            counter: state.counter + 1
         }
     }
     if (action.type === 'ADD_COUNTER') {

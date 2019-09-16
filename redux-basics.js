@@ -26,7 +26,7 @@ const rootReducer = (state = initialState, action) => {
 const store = createStore(rootReducer);
 console.log('[Store]', store.getState());
 
-//Subscription
+//Subscription, gets triggere whenever state gets updated
 store.subscribe(() => {
     console.log('[Subscription]', store.getState());
 });
